@@ -22,6 +22,11 @@ class MainActivity : AppCompatActivity() {
             putExtra(EXTRA_MESSAGE, message)
         }
         startActivity(intent)
+    }
 
+    /** Called when the user taps the Show WiFi button */
+    fun requestWifi(view: View) {
+        val intent = Intent(this, DisplayWifiDataActivity::class.java)
+        startActivity(intent)
     }
 }
